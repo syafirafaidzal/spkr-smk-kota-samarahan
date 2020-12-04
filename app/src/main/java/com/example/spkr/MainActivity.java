@@ -12,7 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
+    private Button register;
+    private Button login;
 
     private Button clickMe, scanner, viewRecord;
     private static final int ZXING_CAMERA_PERMISSION = 1;
@@ -23,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        register = (Button) findViewById(R.id.btn_register);
+        login = (Button) findViewById(R.id.btn_login);
+        
         clickMe = (Button) findViewById(R.id.btn_clickMe);
         scanner = (Button) findViewById(R.id.btn_scanner);
         viewRecord = (Button) findViewById(R.id.btn_viewRecord);
